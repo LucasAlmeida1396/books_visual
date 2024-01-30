@@ -23,7 +23,7 @@ st.title(book_title)
 st.subheader(book_genre)
 
 col1, col2, col3 = st.columns(3)
-col1.metric("Price", book_price)
+col1.metric("Price", f"${book_price}")
 col2.metric("Rating", book_rating)
 col3.metric("Year of publication", book_year)
 
